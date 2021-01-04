@@ -4,4 +4,8 @@ def reverse_each_word(string)
   reversed_array.join(" ")
 end
 
-reverse_each_word("What are you doing?")
+def reverse_each_word_collect(string)
+  word_array = string.split(" ")
+  word_array.collect { |word| word.reverse!}
+  word_array.join(" ")
+end
